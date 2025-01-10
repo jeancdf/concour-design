@@ -84,14 +84,12 @@
             width: 100%;
             font-size: 1.5rem;
             cursor: pointer;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: background-color 0.3s ease;
             border-top: 3px solid transparent;
         }
 
         footer:hover {
-            background-color: var(--secondary-color);
-            transform: translateY(-5px) scale(1.02);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            background-color: #012a5e; /* Slightly darker blue */
             border-top: 3px solid var(--primary-color);
         }
 
@@ -100,23 +98,13 @@
             text-decoration: none;
             display: block;
             width: 100%;
-            transition: all 0.4s ease;
+            transition: color 0.3s ease;
         }
 
-        footer:hover a {
-            color: var(--primary-color) !important;
-            font-weight: 700;
-            letter-spacing: 2px;
-            transform: scale(1.1);
-        }
+
 
         footer:hover i {
-            animation: bounce 0.5s ease infinite;
-        }
-
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-5px); }
+            animation: none;
         }
 
         header p {
@@ -176,8 +164,9 @@
             <h2 style="font-size: 1.5rem;">Contexte du Concours : EduFinder</h2>
             <p style="font-size: 1.2rem;">Qu'est-ce qu'EduFinder ?</p>
             <p>EduFinder est une plateforme innovante conçue pour accompagner les étudiants et leurs familles dans la recherche de l’établissement scolaire idéal. Grâce à une base de données riche et des outils interactifs, EduFinder aide chaque utilisateur à découvrir ses préférences académiques et à faire des choix éclairés pour son avenir.</p>
-            <div style="background-color: #f8d7da; padding: 15px; border-left: 4px solid #f5c6cb; margin: 15px 0; color: black;">
-                <p style="margin: 0;"><strong>⚠️ Important :</strong> Accédez au site de référence <a href="https://www.edufinder.fr/login" target="_blank" style="color: #721c24; text-decoration: underline; font-weight: bold;">ICI</a></p>
+            <div style="background-color: #aaaaaa; padding: 15px; border-left: 4px solid #7f7e7f; margin: 15px 0; color: black; display: flex; align-items: center; justify-content: space-between;">
+                <p style="margin: 0; font-size: 1.2rem;"><strong>⚠️ Important :</strong> Accédez au site de référence</p>
+                <button href="https://www.edufinder.fr/login" target="_blank" style="margin-left: 10px; padding: 10px 20px; background-color: #02438D; color: white; text-decoration: none; font-weight: bold; border-radius: 5px; border: none; cursor: pointer;">Accéder à EduFinder</button>
             </div>
             <p style="font-size: 1.2rem;">Votre mission en tant que participant au concours :</p>
             <p>Imaginer un design system complet qui reflète les valeurs d'EduFinder : transparence, accessibilité et personnalisation. Votre création doit permettre une navigation intuitive et moderne, en offrant une expérience utilisateur rivalisant avec les standards des plus grandes entreprises technologiques.</p>
@@ -217,38 +206,17 @@
             <h2>Modalités de participation</h2>
             <ul>
                 <li><span class="important">Eligibilité :</span> Le concours est ouvert à tous les étudiants inscrits dans l'établissement organisateur ainsi qu'aux participants extérieurs. Ce concours doit avoir au moins 10 équipes. Les candidatures individuelles sont acceptées.</li>
-                <li><span class="important">Dossier de candidature :</span> Chaque équipe doit soumettre un design system complet comportant les composants suivants :
-                    <ul>
-                        <li>Palette de couleurs</li>
-                        <li>Typographie (titres, sous-titres, corps de texte)</li>
-                        <li>Boutons (différents états : normal, hover, désactivé)</li>
-                        <li>Icônes principales</li>
-                        <li>Layouts et grilles</li>
-                        <li>Formulaires</li>
-                        <li>Composants interactifs (modales, menus déroulants, etc.)</li>
-                    </ul>
-                </li>
-                <li>Les fichiers doivent être soumis au format PDF ou Figma. Une présentation explicative sera considérée comme un point positif supplémentaire mais ne sera pas obligatoire.</li>
+                
+                <li><span class="important">Inscription :</span> Chaque participant ou équipe doit s'inscrire en remplissant le formulaire d'inscription en ligne avant la date limite. Un e-mail de confirmation sera envoyé avec des instructions supplémentaires.</li>
+                
+                <li><span class="important">Thème du concours :</span> Le design doit refléter les valeurs d’EduFinder, notamment la transparence, l’accessibilité, et la personnalisation. Les participants sont encouragés à proposer des solutions innovantes tout en respectant ces lignes directrices.</li>
+                
+                <li><span class="important">Soumission :</span> Les fichiers doivent préférablement être soumis sur  Figma. Les rendus doivent être finalisés avant la date limite.</li>
+                
+                <li><span class="important">Présentation supplémentaire :</span> Une présentation explicative (texte ou visuelle) sera considérée comme un atout pour mettre en avant les choix de design et leur pertinence.</li>
             </ul>
         </section>
-
-        <section>
-            <h2>Rendu Obligatoire</h2>
-            <p>Les participants doivent soumettre les éléments suivants :</p>
-            <ul>
-                <li>Page d'accueil avec une présentation claire de la plateforme.</li>
-                <li>Page de connexion et d'inscription.</li>
-                <li>Page de profil utilisateur avec options de personnalisation.</li>
-                <li>Composants obligatoires :
-                    <ul>
-                        <li>Barre de navigation responsive</li>
-                        <li>Tableau de bord avec statistiques</li>
-                        <li>Formulaire de contact</li>
-                        <li>Modale de confirmation</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+        
 
         <section>
             <h2>Critères d'évaluation</h2>
