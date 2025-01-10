@@ -83,6 +83,40 @@
             bottom: 0;
             width: 100%;
             font-size: 1.5rem;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border-top: 3px solid transparent;
+        }
+
+        footer:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            border-top: 3px solid var(--primary-color);
+        }
+
+        footer a {
+            color: white !important;
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            transition: all 0.4s ease;
+        }
+
+        footer:hover a {
+            color: var(--primary-color) !important;
+            font-weight: 700;
+            letter-spacing: 2px;
+            transform: scale(1.1);
+        }
+
+        footer:hover i {
+            animation: bounce 0.5s ease infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
         }
 
         header p {
@@ -111,6 +145,13 @@
         a:hover {
             opacity: 0.8;
         }
+
+        .nav-button:hover {
+            background-color: var(--secondary-color) !important;
+            color: var(--primary-color) !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
@@ -125,6 +166,12 @@
     </header>
 
     <main>
+        <div style="text-align: center; margin-bottom: 30px;">
+            <a href="consigne.html" class="nav-button" style="display: inline-block; padding: 10px 20px; background-color: var(--primary-color); color: white !important; text-decoration: none; border-radius: 5px; margin: 10px; transition: all 0.3s ease;">
+                <i class="bi bi-book"></i> Voir les Consignes Détaillées
+            </a>
+        </div>
+
         <section>
             <h2 style="font-size: 1.5rem;">Contexte du Concours : EduFinder</h2>
             <p style="font-size: 1.2rem;">Qu'est-ce qu'EduFinder ?</p>
@@ -206,11 +253,11 @@
         <section>
             <h2>Critères d'évaluation</h2>
             <ul>
-                <li><span class="important">Cohérence globale du design system (30 points) :</span> Respect de l’unité visuelle et harmonisation des composants.</li>
+                <li><span class="important">Cohérence globale du design system (35 points) :</span> Respect de l’unité visuelle et harmonisation des composants.</li>
                 <li><span class="important">Originalité et innovation (25 points) :</span> Idées créatives et différenciantes.</li>
-                <li><span class="important">Fonctionnalité et utilisabilité (20 points) :</span> Facilité d’utilisation pour un développeur ou un utilisateur final.</li>
-                <li><span class="important">Documentation (15 points) :</span> Clarté et précision des explications fournies.</li>
-                <li><span class="important">Présentation (10 points) :</span> Qualité de la présentation et de la mise en forme du dossier.</li>
+                <li><span class="important">Fonctionnalité et utilisabilité (25 points) :</span> Facilité d’utilisation pour un développeur ou un utilisateur final.</li>
+                <li><span class="important">Documentation (10 points) :</span> Clarté et précision des explications fournies.</li>
+                <li><span class="important">Présentation (5 points) :</span> Qualité de la présentation et de la mise en forme du dossier.</li>
             </ul>
         </section>
 
@@ -247,8 +294,12 @@
 
     <footer>
         <div>
-            <i class="bi bi-pencil-square"></i>
-            Pour vous inscrire, cliquez <a href="https://forms.gle/f2B2MHWvTR2sFg4K6" target="_blank" style="color: white !important; text-decoration: underline; font-weight: bold;">ici</a>.
+            <a href="https://forms.gle/f2B2MHWvTR2sFg4K6" 
+               target="_blank" 
+               style="display: block; color: white !important; text-decoration: none; width: 100%; cursor: pointer;">
+                <i class="bi bi-pencil-square"></i>
+                Pour vous inscrire, cliquez ici
+            </a>
         </div>
     </footer>
 

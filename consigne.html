@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consignes Détaillées - Concours Design EduFinder</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        /* Keeping the same root variables */
+        :root {
+            --primary-color: #02438D;
+            --secondary-color: #FFD700;
+            --accent-color: #E0BF00;
+            --background-color: #F5F5F5;
+            --text-color: #7A7A7A;
+        }
+
+        /* Keeping the same base styles */
+        body {
+            font-family: 'Satoshi', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        /* Same header and main styles */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            padding-bottom: 60px;
+        }
+
+        /* Specific styles for requirements sections */
+        .requirement-card {
+            background-color: white;
+            border-left: 4px solid var(--primary-color);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .requirement-card h3 {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .highlight-box {
+            background-color: var(--secondary-color);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            color: var(--primary-color);
+        }
+
+        .example-box {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        /* Navigation button styles */
+        .nav-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: white !important;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: var(--secondary-color);
+            color: var(--primary-color) !important;
+            transform: translateY(-2px);
+        }
+
+        /* Keeping the same footer styles */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: var(--primary-color);
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border-top: 3px solid transparent;
+        }
+
+        footer:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            border-top: 3px solid var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Consignes Détaillées</h1>
+        <p>Guide Complet pour le Concours Design EduFinder</p>
+    </header>
+
+    <main>
+        <div class="nav-buttons" style="text-align: center; margin-bottom: 30px;">
+            <a href="index.html" class="nav-button">
+                <i class="bi bi-arrow-left"></i> Retour au Règlement
+            </a>
+        </div>
+
+        <section class="requirement-card">
+            <h3>🎯 Objectif Principal</h3>
+            <p>Créer un design system moderne et cohérent pour EduFinder qui:</p>
+            <ul>
+                <li>Facilite la recherche d'établissements scolaires</li>
+                <li>Rend l'information éducative accessible à tous</li>
+                <li>Offre une expérience utilisateur intuitive et agréable</li>
+            </ul>
+        </section>
+
+        <section class="requirement-card">
+            <h3>🎨 Spécifications Design</h3>
+            <div class="highlight-box">
+                <h4>Style Visuel</h4>
+                <ul>
+                    <li>Design épuré et moderne</li>
+                    <li>Utilisation d'une typographie claire et lisible</li>
+                    <li>Palette de couleurs harmonieuse et professionnelle</li>
+                    <li>Contraste suffisant pour l'accessibilité</li>
+                </ul>
+            </div>
+            
+            <div class="example-box">
+                <h4>Composants Requis</h4>
+                <ul>
+                    <li>Navigation principale
+                        <ul>
+                            <li>Menu hamburger pour mobile</li>
+                            <li>Barre de recherche intégrée</li>
+                            <li>Système de filtres avancés</li>
+                        </ul>
+                    </li>
+                    <li>Cartes d'établissements
+                        <ul>
+                            <li>Image principale</li>
+                            <li>Informations clés</li>
+                            <li>Système de notation</li>
+                            <li>Actions rapides</li>
+                        </ul>
+                    </li>
+                    <li>Tableaux de comparaison</li>
+                    <li>Formulaires d'inscription/connexion</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="requirement-card">
+            <h3>📱 Responsive Design</h3>
+            <p>Le design system doit être parfaitement adaptatif pour:</p>
+            <ul>
+                <li>Mobile (320px - 480px)</li>
+                <li>Tablette (481px - 768px)</li>
+                <li>Desktop (769px et plus)</li>
+            </ul>
+            <div class="highlight-box">
+                <p><strong>Important:</strong> Chaque composant doit être pensé pour une utilisation mobile-first.</p>
+            </div>
+        </section>
+
+        <section class="requirement-card">
+            <h3>🔍 Fonctionnalités Clés</h3>
+            <ul>
+                <li>Système de recherche avancée
+                    <ul>
+                        <li>Filtres par localisation</li>
+                        <li>Filtres par type d'établissement</li>
+                        <li>Filtres par spécialités</li>
+                    </ul>
+                </li>
+                <li>Système de comparaison
+                    <ul>
+                        <li>Comparaison côte à côte</li>
+                        <li>Tableaux comparatifs</li>
+                        <li>Export des comparaisons</li>
+                    </ul>
+                </li>
+                <li>Profils personnalisés
+                    <ul>
+                        <li>Dashboard utilisateur</li>
+                        <li>Favoris et notifications</li>
+                        <li>Historique de recherche</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="requirement-card">
+            <h3>📋 Format de Livraison</h3>
+            <div class="highlight-box">
+                <h4>Fichiers Requis</h4>
+                <ul>
+                    <li>Fichier Figma ou PDF du design system complet</li>
+                    <li>Documentation des composants</li>
+                    <li>Guide d'utilisation des composants</li>
+                    <li>Maquettes des pages principales</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="requirement-card">
+            <h3>⭐ Critères de Succès</h3>
+            <ul>
+                <li>Cohérence visuelle à travers tous les composants</li>
+                <li>Respect des principes d'accessibilité WCAG</li>
+                <li>Documentation claire et complète</li>
+                <li>Innovation dans l'approche UX</li>
+                <li>Facilité d'implémentation pour les développeurs</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <a href="https://forms.gle/f2B2MHWvTR2sFg4K6" 
+               target="_blank" 
+               style="display: block; color: white !important; text-decoration: none; width: 100%;">
+                <i class="bi bi-pencil-square"></i>
+                Commencer votre participation
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
